@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-     <h1>Is Your Birthday Lucky??</h1>
+     <h1>Is Your Birthday Lucky🤔</h1>
 
      <label for="dob-input" className="dob-label"> Date Of Birth</label>
 
