@@ -1,6 +1,28 @@
+import{useState,useRef} from "react";
 import './App.css';
 
 function App() {
+
+
+const numInput = useRef(null);
+const dobInput = useRef(null);
+const clickCheck=() =>{
+ 
+   const inputVal = numInput.current.value;
+   const inputDob = dobInput.current.value;
+   const selectedDateValue = inputDob.split('-');
+  const joinedDateValue = selectedDateValue.join('');
+  var sum =0;
+  for( let i=0;i<joinedDateValue.length;i++){
+  var element =+joinedDateValue[i];
+  sum= sum+element;
+}
+const result=sum%inputVal;
+console.log(result);
+
+
+};
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,15 +31,15 @@ function App() {
 
      <label for="dob-input" className="dob-label"> Date Of Birth</label>
 
-    <input type="date" id="dob-input"></input>
+    <input type="date" id="dob-input" ref={dobInput}></input>
 
      <label for="num-input" className="num-label">Lucky Number</label>
 
-     <input type="number" id="num-input" placeholder="  Enter a Number"></input>
+     <input type="number" id="num-input" placeholder="  Enter a Number" ref={numInput}></input>
 
-     <btn id="checkBtn">Check</btn>
+     <btn id="checkBtn" onClick={clickCheck}>Check</btn>
 
-     <p id="displayTxt"></p>
+     <p> </p>
     
         
       </header>

@@ -46,6 +46,7 @@
   margin: 0.95rem 0;
 }
 #checkBtn{
+  cursor: pointer;
   border: 0.2rem solid #09c059;
   color: azure;
   background-color: #e64040;
