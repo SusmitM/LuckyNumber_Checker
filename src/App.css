@@ -5,13 +5,13 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: #771fc5;
+  color: #8103f0;
 }
 .dob-label{
   width: 100%;
@@ -22,39 +22,52 @@
   text-align: center;
 }
 #dob-input{
-  width: 25vh;
+  width: 30vh;
   border-radius: 5px;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-  border: transparent;
+  border-color: #8103f0;
+  border-width: 0.75vh;
   font-size: large;
+  text-align: center;
   margin: 0.25rem 0rem;
 
 }
 .num-label{
   width: 100%;
   margin-top:1rem;
+  margin-bottom: 1rem;
   display: block;
   font-weight: 700;
   font-size: x-large;
 }
 #num-input{
-  width: 25vh;
+  width: 32vh;
   border-radius: 5px;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border: transparent;
+  border-color: #8103f0;
+  border-width: 0.75vh;
   font-size: medium;
-  margin: 0.95rem 0;
+  text-align: center;
+  margin: 0.25rem 0;
 }
 #checkBtn{
+  font-size: medium;
+  font-weight: 700;
   cursor: pointer;
   border: 0.2rem solid #09c059;
-  color: azure;
+  color: rgb(12, 12, 12);
   background-color: #e64040;
-  padding:0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding:0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-radius: 25px;
   margin-top: 2rem;
+}
+.output{
+  margin: 2rem;
+  width: 100%;
+  font-size: calc(10px + 4vmin);
+  font-weight: bold;
 }
 
 

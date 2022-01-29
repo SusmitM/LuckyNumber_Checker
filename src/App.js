@@ -8,8 +8,6 @@ function App() {
 const numInput = useRef(null);
 const dobInput = useRef(null);
 const clickCheck=() =>{
-
- 
    const inputVal = numInput.current.value;
    const inputDob = dobInput.current.value;
    const selectedDateValue = inputDob.split('-');
@@ -21,12 +19,14 @@ const clickCheck=() =>{
 }
 const result=sum%inputVal;
 console.log(result);
-if(result==0){
-  setDisplay("Lucky");
+if(result===0){
+  setDisplay(inputVal+" is a lucky number!! 🥳 ");
 }
-else{
-  setDisplay("Not Lucky")
+if(result!==0){
+  setDisplay(inputVal+" is not that lucky 😕")
 }
+
+
 
 };
 
@@ -46,7 +46,7 @@ else{
 
      <button id="checkBtn" onClick={clickCheck}>Check</button>
 
-     <span>{display} </span>
+     <span className="output">{display} </span>
     
         
       </header>
