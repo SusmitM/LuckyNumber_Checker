@@ -2,11 +2,13 @@ import{useState,useRef} from "react";
 import './App.css';
 
 function App() {
+  const[display, setDisplay]=useState("");
 
 
 const numInput = useRef(null);
 const dobInput = useRef(null);
 const clickCheck=() =>{
+
  
    const inputVal = numInput.current.value;
    const inputDob = dobInput.current.value;
@@ -19,7 +21,12 @@ const clickCheck=() =>{
 }
 const result=sum%inputVal;
 console.log(result);
-
+if(result==0){
+  setDisplay("Lucky");
+}
+else{
+  setDisplay("Not Lucky")
+}
 
 };
 
@@ -37,9 +44,9 @@ console.log(result);
 
      <input type="number" id="num-input" placeholder="  Enter a Number" ref={numInput}></input>
 
-     <btn id="checkBtn" onClick={clickCheck}>Check</btn>
+     <button id="checkBtn" onClick={clickCheck}>Check</button>
 
-     <p> </p>
+     <span>{display} </span>
     
         
       </header>
