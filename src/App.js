@@ -7,24 +7,44 @@ function App() {
 
 const numInput = useRef(null);
 const dobInput = useRef(null);
-const clickCheck=() =>{
-   const inputVal = numInput.current.value;
-   const inputDob = dobInput.current.value;
-   const selectedDateValue = inputDob.split('-');
+
+const calculateSum =(inputDob)=>{
+  const selectedDateValue = inputDob.split('-');
   const joinedDateValue = selectedDateValue.join('');
   var sum =0;
   for( let i=0;i<joinedDateValue.length;i++){
   var element =+joinedDateValue[i];
   sum= sum+element;
 }
-const result=sum%inputVal;
+return sum;
+
+};
+const checkNumberLucky = (sumofDate, inputVal) =>{
+  const result=sumofDate%inputVal;
 console.log(result);
-if(result===0){
-  setDisplay(inputVal+" is a lucky number!! 🥳 ");
-}
-if(result!==0){
-  setDisplay(inputVal+" is not that lucky 😕")
-}
+  if(result===0){
+     return setDisplay(inputVal+" is a lucky number!! 🥳 ");
+  }
+  if(result!==0){
+     return setDisplay(inputVal+" is not that lucky 😕")
+  }
+
+};
+
+const clickCheck=() =>{
+   const inputVal = numInput.current.value;
+   const inputDob = dobInput.current.value;
+   if(inputVal && inputDob ){
+     const sumofDate = calculateSum(inputDob);
+     checkNumberLucky(sumofDate, inputVal);
+   }
+   else{
+    setDisplay(" INVALID INPUT!!! ");
+
+   }
+   
+
+
 
 
 
