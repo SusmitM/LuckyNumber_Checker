@@ -13,15 +13,17 @@
   font-size: calc(10px + 2vmin);
   color: #8103f0;
 }
-.dob-label{
+
+.dob-label {
   width: 100%;
-  margin:1rem;
+  margin: 1rem;
   display: block;
   font-weight: 700;
   font-size: x-large;
   text-align: center;
 }
-#dob-input{
+
+#dob-input {
   width: 30vh;
   border-radius: 5px;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -32,15 +34,17 @@
   margin: 0.25rem 0rem;
 
 }
-.num-label{
+
+.num-label {
   width: 100%;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   display: block;
   font-weight: 700;
   font-size: x-large;
 }
-#num-input{
+
+#num-input {
   width: 32vh;
   border-radius: 5px;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -50,24 +54,49 @@
   text-align: center;
   margin: 0.25rem 0;
 }
-#checkBtn{
+
+#checkBtn {
   font-size: medium;
   font-weight: 700;
   cursor: pointer;
   border: 0.2rem solid #09c059;
   color: rgb(12, 12, 12);
   background-color: #e64040;
-  padding:0.5rem;
+  padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 25px;
   margin-top: 2rem;
 }
-.output{
+
+.output {
   margin: 2rem;
   width: 100%;
   font-size: calc(10px + 4vmin);
   font-weight: bold;
 }
 
+.footer {
+  width: 100%;
+  background-color: black;
+  color: #8103f0;
+  clear: both;
+  position: relative;
+  height: 115px;
+  margin-top: -100px;
+}
 
+.fText {
+  display: block;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.fIcon {
+  width: 2em;
+  height: 1.75em;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+}

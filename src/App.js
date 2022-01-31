@@ -1,4 +1,8 @@
 import{useState,useRef} from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn} from "react-icons/fa";
+
 import './App.css';
 
 function App() {
@@ -42,11 +46,6 @@ const clickCheck=() =>{
     setDisplay(" INVALID INPUT!!! ");
 
    }
-   
-
-
-
-
 
 };
 
@@ -70,6 +69,15 @@ const clickCheck=() =>{
     
         
       </header>
+      <footer class="footer">
+        <span class="fText">© | 2022 | SusmitMukherjee</span>
+        <a href="https://github.com/Snow-Bull/LuckyNumber_Checker" target="_blank">  < FaGithub  class="fIcon"/> </a> 
+        <a href="https://twitter.com/SusmitMukherje5" target="_blank">  < FaTwitter  class="fIcon"/> </a>
+        <a href="https://www.linkedin.com/in/susmit-mukherjee-5aa8211b5/" target="_blank">  < FaLinkedinIn  class="fIcon"/> </a>
+
+
+
+      </footer>
     </div>
   );
 }
