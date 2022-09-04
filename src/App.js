@@ -25,12 +25,12 @@ return sum;
 };
 const checkNumberLucky = (sumofDate, inputVal) =>{
   const result=sumofDate%inputVal;
-console.log(result);
+// console.log(result);
   if(result===0){
-     return setDisplay(inputVal+" is a lucky number!! 🥳 ");
+     return setDisplay("Your birthday is lucky !! 🥳 ");
   }
   if(result!==0){
-     return setDisplay(inputVal+" is not that lucky 😕")
+     return setDisplay("Your birthday is not lucky 😕")
   }
 
 };
@@ -43,7 +43,7 @@ const clickCheck=() =>{
      checkNumberLucky(sumofDate, inputVal);
    }
    else{
-    setDisplay(" INVALID INPUT!!! ");
+    setDisplay(" ENTER ALL THE FIELDS !!! ");
 
    }
 
