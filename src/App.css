@@ -70,10 +70,14 @@
 }
 
 .output {
-  margin: 2rem;
+  margin: 1.5rem;
   width: 100%;
   font-size: calc(10px + 4vmin);
   font-weight: bold;
+}
+
+#privacyPolicy{
+  font-size: 15px;
 }
 
 .footer {

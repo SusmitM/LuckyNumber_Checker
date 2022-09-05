@@ -1,5 +1,5 @@
 import{useState,useRef} from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub} from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn} from "react-icons/fa";
 
@@ -66,6 +66,7 @@ const clickCheck=() =>{
      <button id="checkBtn" onClick={clickCheck}>Check</button>
 
      <span className="output">{display} </span>
+     <span id="privacyPolicy">Privacy Policy: We do not store any of your Data. </span>
     
         
       </header>
