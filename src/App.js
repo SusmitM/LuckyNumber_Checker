@@ -38,7 +38,16 @@ const checkNumberLucky = (sumofDate, inputVal) =>{
 const clickCheck=() =>{
    const inputVal = numInput.current.value;
    const inputDob = dobInput.current.value;
-   if(inputVal && inputDob ){
+   console.log(inputDob,inputVal);
+  //  if(inputVal==" " || inputDob==" "){
+  //   setDisplay(" ENTER ALL THE FIELDS !!!");
+
+  //  }
+   if(inputVal<=0){
+    setDisplay("Please Enter Positive and Non-Zero values");
+
+   }
+   else if(inputDob && inputVal) {
      const sumofDate = calculateSum(inputDob);
      checkNumberLucky(sumofDate, inputVal);
    }
